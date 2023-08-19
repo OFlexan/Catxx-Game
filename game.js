@@ -1,4 +1,3 @@
-// im keeping the code so that anyone can understand it, normally i would do more "personal preference" things like one-liners
 var story = document.querySelector("#story"); // or document.getElementById("story"), but i just prefer this :P
 var optionA = document.querySelector("#optionA");
 var optionB = document.querySelector("#optionB");
@@ -92,46 +91,3 @@ function setAs(str) {
     }
     return f;
 }
-
-/*
-//button IDs show the next path if the user clicks on that button
-// this gonna get messey :p
-
-const pathA = document.getElementById("pathA");
-const pathB = document.getElementById("pathB");
-const pathC = document.getElementById("pathC");
-const textBox = document.getElementById("storyTextBox")
-;
-//first story text
-textBox.textContent = "haha";
-
-pathA.addEventListener("click" , ()=> {
-  textBox.textContent = "Story path A";
-  pathA.id = "pathAA";
-  pathB.id = "pathAB";
-  pathC.id = "pathAC";
-  const pathAA = document.getElementById("pathAA");
-  const pathAB = document.getElementById("pathAB");
-  const pathAC = document.getElementById("pathAC");
-  
-
-});
-
-pathB.addEventListener("click" , ()=> {
-  textBox.textContent = "Story path B";
-  pathA.id = "pathAA";
-  pathB.id = "pathAB";
-  pathC.id = "Null-button";
-
-});
-
-pathC.addEventListener("click" , ()=> {
-  textBox.textContent = "Story path C";
-  pathA.id = "pathAA";
-  pathB.id = "pathAB";
-  pathC.id = "pathAC";
-});
-
-
-//what the fuck
-*/
