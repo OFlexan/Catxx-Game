@@ -36,23 +36,23 @@ var currentPath = choices;
 var path = [];
 
 optionA.onclick = () => {
+    path.push("A");
     // if the path is a string, redirect to another part of the story
     // if the path is a function, run it to decide what to do or store a variable
     var f = typeof currentPath.A[1] == "function" ? currentPath.A[1]() : currentPath.A[1];
     currentPath = typeof f == "string" ? setAs(f) : f;
-    path.push("A");
     renderStory();
 };
 optionB.onclick = () => {
+    path.push("B");
     var f = typeof currentPath.B[1] == "function" ? currentPath.B[1]() : currentPath.B[1];
     currentPath = typeof f == "string" ? setAs(f) : f;
-    path.push("B");
     renderStory();
 };
 optionC.onclick = () => {
+    path.push("C");
     var f = typeof currentPath.C[1] == "function" ? currentPath.C[1]() : currentPath.C[1];
     currentPath = typeof f == "string" ? setAs(f) : f;
-    path.push("C");
     renderStory();
 };
 
